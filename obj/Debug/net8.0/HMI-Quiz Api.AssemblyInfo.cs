@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("41ef1591-0acc-45ed-9bb9-47ea53574a52")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("HMI-Quiz Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1630534276579433f9fd1a2fbdb9b4d1f3f65c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3348da22989a488508219a9f15052d9ddb432f60")]
 [assembly: System.Reflection.AssemblyProductAttribute("HMI-Quiz Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HMI-Quiz Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
