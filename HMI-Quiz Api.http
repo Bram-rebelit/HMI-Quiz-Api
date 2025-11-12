@@ -1,0 +1,6 @@
+@HMI_Quiz_Api_HostAddress = http://localhost:5140
+
+GET {{HMI_Quiz_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

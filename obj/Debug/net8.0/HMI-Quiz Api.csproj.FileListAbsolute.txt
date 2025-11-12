@@ -1,0 +1,35 @@
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\appsettings.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\HMI-Quiz Api.staticwebassets.endpoints.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\HMI-Quiz Api.exe
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\HMI-Quiz Api.deps.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\HMI-Quiz Api.runtimeconfig.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\HMI-Quiz Api.dll
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\HMI-Quiz Api.pdb
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.csproj.AssemblyReference.cache
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.AssemblyInfoInputs.cache
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.AssemblyInfo.cs
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.csproj.CoreCompileInputs.cache
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\scopedcss\bundle\HMI-Quiz Api.styles.css
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz.DC0AEB43.Up2Date
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.dll
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\refint\HMI-Quiz Api.dll
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.pdb
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.genruntimeconfig.cache
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\ref\HMI-Quiz Api.dll
