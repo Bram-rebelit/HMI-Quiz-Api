@@ -1,47 +1,22 @@
-﻿name: Build
-
+﻿
+name: SonarQube Analysis
 on:
   push:
-    branches:
-      - main
-
-
+    branches: [ "main" ]
 jobs:
-  build:
-    name: Build and analyze
-    runs-on: windows-latest
-    
+  sonar:
+    runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: 17
-          distribution: 'zulu' # Alternative distribution options are available.
-      - name: Cache SonarQube packages
-        uses: actions/cache@v4
-        with:
-          path: ${{ runner.temp }}\cache
-          key: ${{ runner.os }}-sonar
-          restore-keys: ${{ runner.os }}-sonar
-      - name: Cache SonarQube scanner
-        id: cache-sonar-scanner
-        uses: actions/cache@v4
-        with:
-          path: ${{ runner.temp }}\scanner
-          key: ${{ runner.os }}-sonar-scanner
-          restore-keys: ${{ runner.os }}-sonar-scanner
-      - name: Install SonarQube scanner
-        if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
-        shell: powershell
+          java-version: '17'
+
+      - name: SonarQube Scan
         run: |
-          New-Item -Path ${{ runner.temp }}\scanner -ItemType Directory
-          dotnet tool update dotnet-sonarscanner --tool-path ${{ runner.temp }}\scanner
-      - name: Build and analyze
-        shell: powershell
-        run: |
-          ${{ runner.temp }}\scanner\dotnet-sonarscanner begin /k:"HMI-Quiz-App" /d:sonar.token="sqp_2bd01fde99163ec49c08ee732f2dd6479119b7a5" /d:sonar.host.url="http://localhost:9000"
-          dotnet build
-          ${{ runner.temp }}\scanner\dotnet-sonarscanner end /d:sonar.token="sqp_2bd01fde99163ec49c08ee732f2dd6479119b7a5"
+          mvn clean verify sonar:sonar \
+            -Dsonar.projectKey=HMI-Quiz-App \
+            -Dsonar.host.url=http://localhost:9000 \
+            -Dsonar.login=sqp_2bd01fde99163ec49c08ee732f2dd6479119b7a5
