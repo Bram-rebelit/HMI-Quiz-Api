@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HMI-Quiz Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c2c29d3d0eb81d5b251f1fad2a525eb2224b180")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1630534276579433f9fd1a2fbdb9b4d1f3f65c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("HMI-Quiz Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HMI-Quiz Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
