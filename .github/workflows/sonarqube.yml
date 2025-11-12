@@ -1,0 +1,48 @@
+﻿name: SonarQube Scan
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  sonar:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Setup .NET SDK
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      # Install SonarScanner
+      - name: Install SonarScanner
+        run: dotnet tool install --global dotnet-sonarscanner
+
+      # Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # Begin SonarQube analysis
+      - name: Begin SonarQube analysis
+        run: |
+          dotnet sonarscanner begin \
+            /k:"HMI-Quiz-App" \
+            /d:sonar.host.url="http://localhost:9000" \
+            /d:sonar.login="sqp_2bd01fde99163ec49c08ee732f2dd6479119b7a5"
+
+      # Build the project
+      - name: Build
+        run: dotnet build --configuration Release
+
+      # End SonarQube analysis
+      - name: End SonarQube analysis
+        run: dotnet sonarscanner end /d:sonar.login="sqp_2bd01fde99163ec49c08ee732f2dd6479119b7a5"

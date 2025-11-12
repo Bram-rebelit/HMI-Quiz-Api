@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("41ef1591-0acc-45ed-9bb9-47ea53574a52")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("HMI-Quiz Api")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c48766ca81804e5c256d8b369cff3ae51a781491")]
 [assembly: System.Reflection.AssemblyProductAttribute("HMI-Quiz Api")]

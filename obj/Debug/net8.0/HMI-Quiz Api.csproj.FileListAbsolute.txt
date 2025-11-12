@@ -33,3 +33,4 @@ C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\D
 C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.pdb
 C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.genruntimeconfig.cache
 C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\ref\HMI-Quiz Api.dll
+C:\Users\Bram van de Wetering\Documents\Projects\HMI-Quiz Api\HMI-Quiz Api\obj\Debug\net8.0\HMI-Quiz Api.sourcelink.json
