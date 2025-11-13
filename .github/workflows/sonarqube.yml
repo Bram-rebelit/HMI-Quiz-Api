@@ -10,6 +10,11 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      - name: Show runner os
+        run: |
+            echo "runner.os = $RUNNER_OS"
+            uname -a || true
+
       - name: Checkout repository
         uses: actions/checkout@v3
 
