@@ -19,11 +19,11 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Build / Test (replace with your commands)
-        run: |
-          # replace these with your project's build/test commands
-          echo "Run build/test here if needed"
-        shell: bash
+      # - name: Build / Test (replace with your commands)
+      #   run: |
+      #     # replace these with your project's build/test commands
+      #     echo "Run build/test here if needed"
+      #   shell: bash
 
       - name: Download SonarScanner CLI
         run: |
