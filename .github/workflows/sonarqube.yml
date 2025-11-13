@@ -42,9 +42,9 @@ jobs:
       - name: Build and analyze
         shell: powershell
         run: |
-          ${{ runner.temp }}\scanner\dotnet-sonarscanner begin /k:"HMI-Quiz-App" /d:sonar.token="sqp_2bd01fde99163ec49c08ee732f2dd6479119b7a5" /d:sonar.host.url="http://localhost:9000"
+          ${{ runner.temp }}\scanner\dotnet-sonarscanner begin /k:"HMI-Quiz-App" /d:sonar.token="sqp_26f1043655b6f2881ae7816d1355ff7bde6fc65c" /d:sonar.host.url="http://localhost:9000"
           dotnet build
-          ${{ runner.temp }}\scanner\dotnet-sonarscanner end /d:sonar.token="sqp_2bd01fde99163ec49c08ee732f2dd6479119b7a5"
+          ${{ runner.temp }}\scanner\dotnet-sonarscanner end /d:sonar.token="sqp_26f1043655b6f2881ae7816d1355ff7bde6fc65c"
 
       # # 4. Run SonarQube analysis
       # - name: SonarQube Scan
