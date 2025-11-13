@@ -7,31 +7,47 @@ on:
 
 jobs:
   sonar:
-    runs-on: self-hosted  # Your local runner
+    runs-on: self-hosted
+
     steps:
-      # 1. Checkout code
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Set up Java (required for Sonar Scanner)
-      - name: Set up JDK
+      - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
+          distribution: temurin
           java-version: '17'
-          distribution: 'temurin'
-      # 3. Cache Maven dependencies (optional)
-      - name: Cache Maven packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
 
-      # 4. Run SonarQube analysis
-      - name: SonarQube Scan
+      # Optional: run your build/tests so Sonar can analyze compiled code or coverage
+      - name: Install dependencies and build (example for Node)
+        if: runner.os != 'Windows' || true
         run: |
-          mvn clean verify sonar:sonar \
-            -Dsonar.projectKey=HMI-Quiz-App \
-            -Dsonar.host.url=http://localhost:9000 \
-            -Dsonar.login=sqp_2bd01fde99163ec49c08ee732f2dd6479119b7a5
+          # Replace with your project build steps
+          # Example (Node.js): npm ci && npm run build
+          echo "Add your build/test commands here"
+
+      - name: Download SonarScanner CLI
+        run: |
+          SONAR_VERSION=4.10.0.2896
+          curl -sSLo sonar-scanner.zip "https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_VERSION}.zip"
+          unzip -q sonar-scanner.zip
+          mv sonar-scanner-${SONAR_VERSION} sonar-scanner
+        shell: bash
+
+      - name: Run SonarScanner
+        env:
+          SONAR_TOKEN: sqp_2bd01fde99163ec49c08ee732f2dd6479119b7a5
+        run: |
+          # Edit these settings as needed:
+          export SONAR_HOST_URL="http://localhost:9000"
+          export SONAR_PROJECT_KEY="HMI-Quiz-App"
+          export SONAR_SOURCES="."
+          # If your code is in a subfolder, e.g., ./backend, set SONAR_SOURCES="./backend"
+
+          ./sonar-scanner/bin/sonar-scanner \
+            -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
+            -Dsonar.sources=${SONAR_SOURCES} \
+            -Dsonar.host.url=${SONAR_HOST_URL} \
+            -Dsonar.login=${SONAR_TOKEN}
+        shell: bash
